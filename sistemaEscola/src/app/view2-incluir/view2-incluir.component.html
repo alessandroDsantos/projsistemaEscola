@@ -1,0 +1,42 @@
+<div class="border">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div>
+            <h4>Curso - Incluir</h4>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputNome4">Nome:</label>
+                <input type="nome" class="form-control" id="inputNome4" ngModel required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputInstrutor4">Instrutor:</label>
+                <input type="instrutor" class="form-control" id="inputInstrutor4" ngModel required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputLocal4">Local:</label>
+                <input type="local" class="form-control" id="inputLocal4" ngModel required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCargaHoraria4">Carga Horária:</label>
+                <input type="cargaHoraria" class="form-control" id="inputCargaHoraria4" ngModel required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputDataInicio4">Data Início:</label>
+                <input type="dataInicio" class="form-control" id="inputDataInicio4" placeholder="dd/mm/aaaa" ngModel required>
+            </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary" [disabled]="f.form.invalid">Incluir</button>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary" routerLink="/view1curso">Voltar</button>
+    </form>
+</div>
